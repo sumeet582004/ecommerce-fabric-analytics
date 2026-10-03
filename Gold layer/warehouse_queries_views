@@ -1,0 +1,59 @@
+-- ================================================================
+-- VIEW: vw_Customer_Summary
+-- Purpose: Customer-level summary for customer analytics.
+--
+-- Provides:
+--   • Total number of orders
+--   • Lifetime customer value based on delivered orders
+--   • First and last order dates
+--   • Customer classification as One-time or Repeat
+--
+-- Business Use:
+--   • Identify high-value customers
+--   • Analyze one-time vs repeat customers
+--   • Support customer segmentation and retention analysis
+-- ================================================================
+
+CREATE VIEW dbo.vw_Customer_Summary AS
+
+SELECT
+    c.Customer_ID,
+    c.Customer_Name,
+    c.City_Tier,
+    c.Age_Group,
+    c.Gender,
+
+    COUNT(f.Order_ID) AS Total_Orders,
+
+    SUM(
+        CASE
+            WHEN f.Is_Delivered = 1
+            THEN f.Final_Amount
+            ELSE 0
+        END
+    ) AS Lifetime_Value,
+
+    MIN(d.[Date]) AS First_Order_Date,
+
+    MAX(d.[Date]) AS Last_Order_Date,
+
+    CASE
+        WHEN COUNT(f.Order_ID) > 1
+        THEN 'Repeat'
+        ELSE 'One-time'
+    END AS Customer_Type
+
+FROM dbo.fact_orders f
+
+JOIN dbo.dim_customer c
+    ON f.Customer_Key = c.Customer_Key
+
+JOIN dbo.dim_date d
+    ON f.Date_Key = d.Date_Key
+
+GROUP BY
+    c.Customer_ID,
+    c.Customer_Name,
+    c.City_Tier,
+    c.Age_Group,
+    c.Gender;
