@@ -1,0 +1,401 @@
+Product_ID,Category,Sub_Category,Brand,Price,Cost_Price,Product_Rating,Stock_Quantity
+PROD0001,Electronics,Television,Samsung,30360.06,21598.79,3.9,392
+PROD0002,Electronics,Headphones,Philips,12705.48,10132.45,4.2,1
+PROD0003,Electronics,Television,Sony,24412.36,17760.67,2.6,64
+PROD0004,Electronics,Laptop,Boat,16014.68,11145.18,4.7,321
+PROD0005,Electronics,Speaker,Boat,10569.58,8390.66,5.0,89
+PROD0006,Electronics,Camera,LG,27661.1,17035.93,3.1,493
+PROD0007,Electronics,Headphones,Philips,15545.94,12311.43,2.8,455
+PROD0008,Electronics,Headphones,Boat,40154.69,23188.15,2.6,342
+PROD0009,Electronics,Laptop,Philips,6331.98,4617.06,5.0,342
+PROD0010,Electronics,Speaker,Boat,31586.82,22248.62,3.9,216
+PROD0011,Electronics,Speaker,Sony,23508.65,13198.5,4.9,225
+PROD0012,Electronics,Camera,Sony,11283.25,7535.85,4.8,91
+PROD0013,Electronics,Headphones,Samsung,7262.33,4063.51,4.3,358
+PROD0014,Electronics,Laptop,Sony,37285.92,23224.06,2.9,409
+PROD0015,Electronics,Camera,Sony,28933.53,22271.22,4.9,273
+PROD0016,Electronics,Headphones,Philips,27394.09,17140.3,3.0,359
+PROD0017,Electronics,Television,Samsung,44195.83,28447.32,2.9,50
+PROD0018,Electronics,Speaker,Sony,31227.55,17533.65,3.3,213
+PROD0019,Electronics,Speaker,Boat,18403.52,13491.92,3.4,195
+PROD0020,Electronics,Laptop,LG,44832.77,32913.5,2.7,42
+PROD0021,Electronics,Speaker,Samsung,33823.17,21262.57,4.1,159
+PROD0022,Electronics,Headphones,Boat,41594.68,29109.0,3.0,85
+PROD0023,Electronics,Laptop,Samsung,17112.07,11826.94,2.7,164
+PROD0024,Electronics,Speaker,Samsung,15517.62,10014.79,4.3,24
+PROD0025,Electronics,Television,Philips,41984.13,25942.38,4.4,377
+PROD0026,Electronics,Headphones,Philips,9932.18,6783.77,2.9,364
+PROD0027,Electronics,Laptop,Samsung,27923.25,21693.85,4.3,68
+PROD0028,Electronics,Television,Boat,26594.09,18835.19,4.5,249
+PROD0029,Electronics,Speaker,Samsung,28205.29,15765.17,2.5,33
+PROD0030,Electronics,Headphones,Philips,9212.38,6939.34,4.6,236
+PROD0031,Electronics,Speaker,Boat,40703.24,23376.7,3.1,367
+PROD0032,Electronics,Laptop,Samsung,22867.9,16328.46,3.5,369
+PROD0033,Electronics,Headphones,Philips,17762.91,9770.38,2.9,380
+PROD0034,Electronics,Television,Samsung,26802.26,16708.05,2.9,214
+PROD0035,Electronics,Speaker,Boat,20111.44,15066.44,4.7,63
+PROD0036,Electronics,Camera,LG,2110.22,1289.17,3.0,468
+PROD0037,Electronics,Television,Philips,14828.25,8307.9,3.7,370
+PROD0038,Electronics,Television,LG,42803.73,32067.31,3.0,323
+PROD0039,Electronics,Headphones,Samsung,34910.12,27107.6,3.1,54
+PROD0040,Electronics,Television,Philips,20383.29,15614.09,4.3,264
+PROD0041,Electronics,Laptop,LG,8818.62,6254.48,4.4,107
+PROD0042,Electronics,Camera,Boat,5040.33,3529.7,3.3,65
+PROD0043,Electronics,Laptop,Philips,16071.82,11021.3,3.5,469
+PROD0044,Electronics,Camera,Boat,1011.66,713.51,3.5,446
+PROD0045,Electronics,Headphones,LG,15853.42,10789.4,3.4,51
+PROD0046,Electronics,Television,Boat,8394.85,4645.41,3.5,176
+PROD0047,Electronics,Headphones,LG,34119.71,18846.93,4.9,151
+PROD0048,Electronics,Camera,Boat,14339.63,11170.75,3.5,105
+PROD0049,Electronics,Speaker,Boat,16045.05,12208.21,3.4,112
+PROD0050,Electronics,Headphones,LG,1981.75,1267.65,4.4,170
+PROD0051,Fashion,Bags,Levis,2133.36,1522.43,3.1,309
+PROD0052,Fashion,Watches,H&M,1142.62,629.43,3.3,434
+PROD0053,Fashion,Footwear,Puma,2241.57,1468.36,2.7,413
+PROD0054,Fashion,Watches,H&M,417.22,309.11,4.8,65
+PROD0055,Fashion,Bags,Puma,4759.02,2704.59,4.0,397
+PROD0056,Fashion,Bags,Van Heusen,925.71,630.26,4.3,323
+PROD0057,Fashion,Men's Wear,Puma,490.63,352.31,3.4,474
+PROD0058,Fashion,Men's Wear,Van Heusen,3070.85,1793.97,4.6,261
+PROD0059,Fashion,Men's Wear,Levis,1110.15,725.22,3.7,243
+PROD0060,Fashion,Footwear,Levis,1622.22,1260.71,3.5,319
+PROD0061,Fashion,Women's Wear,Levis,3034.1,2272.33,3.6,59
+PROD0062,Fashion,Bags,H&M,1721.43,1320.38,3.8,76
+PROD0063,Fashion,Footwear,Van Heusen,1235.44,832.76,4.8,287
+PROD0064,Fashion,Women's Wear,H&M,1456.16,907.77,4.0,268
+PROD0065,Fashion,Watches,Levis,2949.44,1918.95,4.9,26
+PROD0066,Fashion,Women's Wear,H&M,3893.74,2536.05,4.4,126
+PROD0067,Fashion,Watches,Puma,1510.65,923.42,4.3,30
+PROD0068,Fashion,Men's Wear,Allen Solly,4493.14,2748.04,2.7,252
+PROD0069,Fashion,Women's Wear,H&M,2385.49,1668.03,3.2,334
+PROD0070,Fashion,Men's Wear,Allen Solly,4230.06,2807.07,4.0,492
+PROD0071,Fashion,Footwear,Van Heusen,3406.43,2465.9,4.3,85
+PROD0072,Fashion,Bags,Levis,1333.05,836.57,2.7,457
+PROD0073,Fashion,Watches,Allen Solly,1036.12,749.26,2.7,460
+PROD0074,Fashion,Men's Wear,H&M,620.7,410.83,2.9,18
+PROD0075,Fashion,Footwear,Allen Solly,2219.44,1690.49,2.9,270
+PROD0076,Fashion,Footwear,Puma,2659.15,1940.2,2.9,16
+PROD0077,Fashion,Women's Wear,Allen Solly,3470.54,2562.52,3.1,322
+PROD0078,Fashion,Men's Wear,Van Heusen,1002.71,747.69,4.0,27
+PROD0079,Fashion,Men's Wear,Puma,3576.58,2167.84,2.7,356
+PROD0080,Fashion,Footwear,Levis,3030.93,2064.48,4.5,45
+PROD0081,Fashion,Women's Wear,Allen Solly,1908.62,1320.5,3.2,87
+PROD0082,Fashion,Footwear,Levis,1091.89,605.01,4.6,432
+PROD0083,Fashion,Bags,Puma,1842.28,1208.71,3.9,217
+PROD0084,Fashion,Watches,Levis,1962.67,1434.97,3.3,275
+PROD0085,Fashion,Watches,Puma,2095.6,1491.85,4.9,99
+PROD0086,Fashion,Men's Wear,Van Heusen,2671.57,1611.17,2.7,327
+PROD0087,Fashion,Women's Wear,Allen Solly,1077.62,699.14,3.3,16
+PROD0088,Fashion,Bags,Van Heusen,4780.94,3407.0,4.2,71
+PROD0089,Fashion,Bags,Van Heusen,1690.75,1304.6,3.3,74
+PROD0090,Fashion,Men's Wear,Van Heusen,4062.88,2702.53,2.7,3
+PROD0091,Fashion,Bags,Levis,2033.37,1419.35,3.4,491
+PROD0092,Fashion,Watches,Puma,626.29,431.02,3.9,99
+PROD0093,Fashion,Bags,H&M,3237.48,2177.54,4.7,37
+PROD0094,Fashion,Men's Wear,Allen Solly,1519.19,1056.5,3.1,192
+PROD0095,Fashion,Men's Wear,Puma,823.28,489.38,4.5,42
+PROD0096,Fashion,Footwear,Puma,1589.49,1035.92,4.9,437
+PROD0097,Fashion,Bags,Levis,2362.84,1701.36,2.8,378
+PROD0098,Fashion,Women's Wear,Allen Solly,4454.33,2559.01,4.1,290
+PROD0099,Fashion,Bags,H&M,1055.49,688.53,4.2,299
+PROD0100,Fashion,Watches,Puma,4875.45,3257.04,3.5,491
+PROD0101,Grocery,Beverages,Nestle,87.11,57.72,4.4,437
+PROD0102,Grocery,Dairy,Nestle,1477.77,948.79,3.8,41
+PROD0103,Grocery,Personal Hygiene,Nestle,128.2,86.25,2.7,239
+PROD0104,Grocery,Snacks,Nestle,214.43,124.91,4.2,390
+PROD0105,Grocery,Dairy,Nestle,1421.85,901.49,4.1,200
+PROD0106,Grocery,Personal Hygiene,Patanjali,52.7,35.72,3.0,460
+PROD0107,Grocery,Beverages,Nestle,1155.6,851.34,3.8,165
+PROD0108,Grocery,Dairy,Nestle,274.38,201.53,4.8,277
+PROD0109,Grocery,Beverages,Tata,1493.96,933.28,3.3,293
+PROD0110,Grocery,Beverages,ITC,1431.12,845.82,3.1,408
+PROD0111,Grocery,Personal Hygiene,ITC,1472.56,1079.0,4.6,56
+PROD0112,Grocery,Beverages,Tata,809.14,499.48,4.6,38
+PROD0113,Grocery,Staples,Tata,1015.64,766.27,3.4,442
+PROD0114,Grocery,Personal Hygiene,Amul,725.15,477.91,4.6,478
+PROD0115,Grocery,Personal Hygiene,Amul,577.42,372.42,4.5,84
+PROD0116,Grocery,Staples,Patanjali,996.42,678.06,4.0,183
+PROD0117,Grocery,Beverages,Amul,310.39,219.36,4.1,121
+PROD0118,Grocery,Dairy,Tata,132.76,74.5,3.0,149
+PROD0119,Grocery,Beverages,Tata,1445.92,873.02,3.9,16
+PROD0120,Grocery,Staples,Patanjali,355.32,212.12,3.7,279
+PROD0121,Grocery,Staples,Patanjali,550.97,375.47,3.1,291
+PROD0122,Grocery,Staples,Amul,421.96,269.36,3.0,475
+PROD0123,Grocery,Personal Hygiene,Nestle,518.71,291.68,4.9,30
+PROD0124,Grocery,Personal Hygiene,Patanjali,1179.49,724.19,2.9,242
+PROD0125,Grocery,Snacks,Patanjali,749.81,519.98,3.7,80
+PROD0126,Grocery,Beverages,Amul,1300.45,810.55,3.6,321
+PROD0127,Grocery,Dairy,Amul,927.88,623.81,2.7,446
+PROD0128,Grocery,Staples,Nestle,652.04,487.22,2.9,3
+PROD0129,Grocery,Personal Hygiene,ITC,554.32,418.88,4.1,374
+PROD0130,Grocery,Beverages,ITC,291.44,195.01,4.1,58
+PROD0131,Grocery,Personal Hygiene,Tata,1465.05,1152.67,3.4,100
+PROD0132,Grocery,Dairy,Patanjali,416.4,321.83,4.9,334
+PROD0133,Grocery,Staples,Tata,622.51,488.83,4.7,233
+PROD0134,Grocery,Staples,Nestle,295.94,213.55,3.6,227
+PROD0135,Grocery,Personal Hygiene,ITC,84.92,62.72,2.9,249
+PROD0136,Grocery,Snacks,ITC,947.16,698.23,3.8,33
+PROD0137,Grocery,Personal Hygiene,Nestle,959.06,743.47,4.3,117
+PROD0138,Grocery,Beverages,Amul,1035.31,730.26,4.3,80
+PROD0139,Grocery,Staples,ITC,1134.82,798.45,3.6,101
+PROD0140,Grocery,Dairy,Patanjali,1436.12,1060.1,2.9,454
+PROD0141,Grocery,Beverages,Nestle,1398.2,987.93,2.7,273
+PROD0142,Grocery,Personal Hygiene,Patanjali,171.37,111.17,3.8,106
+PROD0143,Grocery,Dairy,Patanjali,885.94,607.91,3.7,225
+PROD0144,Grocery,Dairy,Tata,885.52,514.94,3.1,162
+PROD0145,Grocery,Beverages,Patanjali,1183.8,847.54,4.2,321
+PROD0146,Grocery,Beverages,Amul,1315.0,818.24,3.2,24
+PROD0147,Grocery,Staples,ITC,129.54,76.06,3.9,437
+PROD0148,Grocery,Beverages,Patanjali,931.43,680.64,3.4,393
+PROD0149,Grocery,Beverages,Patanjali,927.63,621.8,4.4,47
+PROD0150,Grocery,Dairy,ITC,1211.11,862.55,3.3,456
+PROD0151,Home & Kitchen,Appliances,Prestige,11139.34,6857.51,3.1,416
+PROD0152,Home & Kitchen,Appliances,Cello,8366.18,6370.7,3.4,150
+PROD0153,Home & Kitchen,Decor,IKEA,7523.14,5571.87,4.3,4
+PROD0154,Home & Kitchen,Furniture,Milton,9675.43,6474.33,4.5,267
+PROD0155,Home & Kitchen,Appliances,Wonderchef,6489.86,4507.44,2.6,220
+PROD0156,Home & Kitchen,Cookware,Cello,3978.29,2646.31,3.1,51
+PROD0157,Home & Kitchen,Furniture,Milton,6104.45,4189.9,4.6,17
+PROD0158,Home & Kitchen,Decor,IKEA,5264.19,4204.84,3.0,451
+PROD0159,Home & Kitchen,Storage,Cello,10926.96,6606.02,3.8,239
+PROD0160,Home & Kitchen,Furniture,Milton,235.87,181.31,4.7,172
+PROD0161,Home & Kitchen,Storage,IKEA,9735.61,6844.14,3.0,329
+PROD0162,Home & Kitchen,Decor,Prestige,5973.86,3515.36,3.1,161
+PROD0163,Home & Kitchen,Cookware,Cello,10812.42,7350.45,3.8,415
+PROD0164,Home & Kitchen,Decor,Wonderchef,9033.25,6461.29,3.6,85
+PROD0165,Home & Kitchen,Appliances,IKEA,9681.9,5846.54,3.8,177
+PROD0166,Home & Kitchen,Furniture,Prestige,8221.83,5709.38,3.4,58
+PROD0167,Home & Kitchen,Cookware,Cello,10755.68,7660.02,4.3,33
+PROD0168,Home & Kitchen,Furniture,Milton,11749.2,6844.56,2.8,439
+PROD0169,Home & Kitchen,Cookware,Milton,5116.25,3216.09,3.5,22
+PROD0170,Home & Kitchen,Furniture,IKEA,8502.01,5056.0,3.4,493
+PROD0171,Home & Kitchen,Furniture,Cello,7143.23,4576.7,4.0,162
+PROD0172,Home & Kitchen,Storage,Cello,10318.91,7001.82,4.2,47
+PROD0173,Home & Kitchen,Storage,IKEA,11636.95,8453.84,3.3,156
+PROD0174,Home & Kitchen,Storage,Milton,3515.72,2186.13,2.7,401
+PROD0175,Home & Kitchen,Decor,Wonderchef,10845.32,7431.13,4.2,336
+PROD0176,Home & Kitchen,Cookware,Cello,7886.87,5301.7,3.8,443
+PROD0177,Home & Kitchen,Cookware,Prestige,5380.47,4237.57,4.3,369
+PROD0178,Home & Kitchen,Cookware,Milton,11351.2,7712.77,4.6,92
+PROD0179,Home & Kitchen,Decor,Prestige,4599.97,3202.63,2.5,16
+PROD0180,Home & Kitchen,Cookware,IKEA,6460.95,4372.91,4.3,304
+PROD0181,Home & Kitchen,Appliances,IKEA,2635.23,1796.86,3.0,125
+PROD0182,Home & Kitchen,Appliances,Wonderchef,11411.41,7499.34,2.7,27
+PROD0183,Home & Kitchen,Storage,Prestige,568.81,328.02,3.9,206
+PROD0184,Home & Kitchen,Cookware,Wonderchef,541.07,375.15,4.6,131
+PROD0185,Home & Kitchen,Cookware,Prestige,2724.88,1904.48,2.7,46
+PROD0186,Home & Kitchen,Storage,Wonderchef,638.37,487.61,4.8,363
+PROD0187,Home & Kitchen,Appliances,Cello,10856.69,6163.35,3.4,45
+PROD0188,Home & Kitchen,Storage,Cello,8207.48,6168.73,4.2,208
+PROD0189,Home & Kitchen,Appliances,Milton,4635.72,3589.27,2.5,471
+PROD0190,Home & Kitchen,Furniture,Prestige,8391.81,6360.81,3.6,358
+PROD0191,Home & Kitchen,Furniture,Wonderchef,8312.72,4643.41,4.6,393
+PROD0192,Home & Kitchen,Appliances,IKEA,1394.86,902.01,4.7,157
+PROD0193,Home & Kitchen,Storage,Prestige,5290.02,3410.41,4.1,346
+PROD0194,Home & Kitchen,Decor,Cello,8660.49,4861.5,3.9,486
+PROD0195,Home & Kitchen,Furniture,Cello,8109.45,6287.12,2.5,362
+PROD0196,Home & Kitchen,Decor,Milton,6818.11,5345.72,4.5,184
+PROD0197,Home & Kitchen,Storage,Prestige,5304.29,3218.78,3.1,139
+PROD0198,Home & Kitchen,Furniture,Prestige,11855.03,8782.17,3.9,48
+PROD0199,Home & Kitchen,Furniture,Prestige,6564.67,4311.85,4.9,381
+PROD0200,Home & Kitchen,Furniture,Wonderchef,10487.53,8310.87,3.4,46
+PROD0201,Beauty & Personal Care,Makeup,Nivea,1615.2,891.47,4.6,211
+PROD0202,Beauty & Personal Care,Fragrance,Mamaearth,1894.36,1318.69,4.0,86
+PROD0203,Beauty & Personal Care,Haircare,L'Oreal,2811.61,2152.7,3.2,199
+PROD0204,Beauty & Personal Care,Makeup,Himalaya,1798.41,1116.51,4.9,176
+PROD0205,Beauty & Personal Care,Fragrance,Himalaya,2901.66,1859.24,2.7,20
+PROD0206,Beauty & Personal Care,Skincare,L'Oreal,2479.0,1717.33,2.6,159
+PROD0207,Beauty & Personal Care,Grooming,Mamaearth,2829.9,1697.7,2.6,74
+PROD0208,Beauty & Personal Care,Haircare,Mamaearth,305.48,235.77,4.4,138
+PROD0209,Beauty & Personal Care,Makeup,Himalaya,2484.49,1777.39,2.9,118
+PROD0210,Beauty & Personal Care,Haircare,Mamaearth,1457.09,1128.33,3.8,135
+PROD0211,Beauty & Personal Care,Haircare,Lakme,583.24,359.76,2.7,130
+PROD0212,Beauty & Personal Care,Grooming,Nivea,1090.85,644.8,3.2,341
+PROD0213,Beauty & Personal Care,Grooming,Mamaearth,215.43,127.47,3.6,365
+PROD0214,Beauty & Personal Care,Makeup,Mamaearth,663.14,438.9,4.1,164
+PROD0215,Beauty & Personal Care,Makeup,Lakme,2213.83,1237.37,3.4,427
+PROD0216,Beauty & Personal Care,Skincare,L'Oreal,489.51,363.12,4.0,206
+PROD0217,Beauty & Personal Care,Makeup,Mamaearth,2823.35,1608.47,3.4,238
+PROD0218,Beauty & Personal Care,Makeup,Mamaearth,2374.35,1826.81,4.3,395
+PROD0219,Beauty & Personal Care,Fragrance,Mamaearth,2935.85,1960.58,2.9,38
+PROD0220,Beauty & Personal Care,Haircare,Nivea,1899.05,1082.09,3.7,387
+PROD0221,Beauty & Personal Care,Skincare,Lakme,2320.91,1705.83,4.2,54
+PROD0222,Beauty & Personal Care,Haircare,Nivea,997.04,723.01,3.1,427
+PROD0223,Beauty & Personal Care,Haircare,L'Oreal,2256.28,1508.01,3.2,69
+PROD0224,Beauty & Personal Care,Makeup,Himalaya,2119.47,1662.37,2.9,218
+PROD0225,Beauty & Personal Care,Grooming,L'Oreal,2493.98,1680.15,3.4,138
+PROD0226,Beauty & Personal Care,Grooming,Lakme,2001.87,1496.94,3.4,185
+PROD0227,Beauty & Personal Care,Fragrance,L'Oreal,717.22,506.54,4.5,273
+PROD0228,Beauty & Personal Care,Fragrance,Nivea,959.31,595.09,4.7,240
+PROD0229,Beauty & Personal Care,Haircare,Mamaearth,812.5,625.07,2.8,486
+PROD0230,Beauty & Personal Care,Haircare,L'Oreal,368.44,237.41,3.3,311
+PROD0231,Beauty & Personal Care,Haircare,Lakme,2876.46,1823.89,3.0,310
+PROD0232,Beauty & Personal Care,Haircare,Himalaya,1658.7,1157.37,3.4,54
+PROD0233,Beauty & Personal Care,Grooming,L'Oreal,2691.28,2062.71,3.6,436
+PROD0234,Beauty & Personal Care,Haircare,Lakme,2479.93,1550.21,4.5,333
+PROD0235,Beauty & Personal Care,Fragrance,Mamaearth,2410.23,1692.76,2.8,47
+PROD0236,Beauty & Personal Care,Skincare,Himalaya,1924.49,1381.21,3.4,3
+PROD0237,Beauty & Personal Care,Skincare,Lakme,2150.9,1577.69,3.2,272
+PROD0238,Beauty & Personal Care,Grooming,L'Oreal,2294.66,1371.13,3.3,352
+PROD0239,Beauty & Personal Care,Haircare,Lakme,1018.56,777.61,4.5,196
+PROD0240,Beauty & Personal Care,Makeup,Mamaearth,620.37,425.94,4.6,349
+PROD0241,Beauty & Personal Care,Haircare,Lakme,1081.76,824.34,3.7,341
+PROD0242,Beauty & Personal Care,Fragrance,Himalaya,793.42,544.08,4.3,220
+PROD0243,Beauty & Personal Care,Haircare,Mamaearth,1803.53,1221.79,3.8,186
+PROD0244,Beauty & Personal Care,Grooming,Himalaya,2303.1,1385.76,4.2,108
+PROD0245,Beauty & Personal Care,Haircare,Mamaearth,1754.23,1365.75,3.8,107
+PROD0246,Beauty & Personal Care,Grooming,Nivea,1975.91,1166.22,4.8,475
+PROD0247,Beauty & Personal Care,Makeup,Nivea,189.21,128.35,2.7,224
+PROD0248,Beauty & Personal Care,Makeup,Lakme,164.1,130.87,3.9,60
+PROD0249,Beauty & Personal Care,Skincare,Lakme,749.21,538.24,4.7,47
+PROD0250,Beauty & Personal Care,Grooming,Lakme,2779.84,1536.26,3.9,280
+PROD0251,Mobiles & Accessories,Earphones,Realme,57481.4,42358.68,4.6,33
+PROD0252,Mobiles & Accessories,Earphones,OnePlus,4260.23,2390.94,4.6,226
+PROD0253,Mobiles & Accessories,Cases,OnePlus,34343.38,20920.75,2.9,476
+PROD0254,Mobiles & Accessories,Smartphones,Realme,32524.08,20362.6,3.6,29
+PROD0255,Mobiles & Accessories,Cases,Xiaomi,38676.22,22268.19,4.8,445
+PROD0256,Mobiles & Accessories,Cases,Boat,40691.7,29173.41,2.5,368
+PROD0257,Mobiles & Accessories,Cases,Boat,31891.24,25197.9,2.7,431
+PROD0258,Mobiles & Accessories,Cases,Boat,25621.76,15948.88,3.8,376
+PROD0259,Mobiles & Accessories,Earphones,Samsung,56039.29,41288.15,3.1,41
+PROD0260,Mobiles & Accessories,Power Banks,Xiaomi,37986.58,22203.45,2.6,108
+PROD0261,Mobiles & Accessories,Power Banks,Boat,38072.44,24295.24,2.7,59
+PROD0262,Mobiles & Accessories,Smartphones,Realme,27516.05,15400.82,2.6,97
+PROD0263,Mobiles & Accessories,Power Banks,OnePlus,49772.92,36657.19,4.1,362
+PROD0264,Mobiles & Accessories,Chargers,Realme,21831.34,15038.74,4.3,316
+PROD0265,Mobiles & Accessories,Power Banks,Samsung,5282.2,3289.1,3.9,34
+PROD0266,Mobiles & Accessories,Smartphones,Boat,7463.89,5506.17,3.1,435
+PROD0267,Mobiles & Accessories,Chargers,OnePlus,48084.28,32268.98,3.9,251
+PROD0268,Mobiles & Accessories,Smartphones,Xiaomi,19530.61,12356.72,3.9,79
+PROD0269,Mobiles & Accessories,Power Banks,Realme,46278.29,28032.81,4.0,367
+PROD0270,Mobiles & Accessories,Power Banks,OnePlus,59298.34,46728.93,3.9,360
+PROD0271,Mobiles & Accessories,Cases,OnePlus,17790.71,10008.23,4.6,101
+PROD0272,Mobiles & Accessories,Earphones,OnePlus,57525.63,40216.97,4.1,335
+PROD0273,Mobiles & Accessories,Power Banks,OnePlus,8968.28,5587.02,3.3,212
+PROD0274,Mobiles & Accessories,Earphones,OnePlus,22464.01,13182.45,3.8,286
+PROD0275,Mobiles & Accessories,Power Banks,OnePlus,18606.21,11994.84,4.3,90
+PROD0276,Mobiles & Accessories,Chargers,OnePlus,20240.01,15339.63,4.0,238
+PROD0277,Mobiles & Accessories,Smartphones,Boat,11078.91,6286.31,3.6,137
+PROD0278,Mobiles & Accessories,Cases,Realme,35468.54,27622.84,4.7,329
+PROD0279,Mobiles & Accessories,Power Banks,Xiaomi,10594.68,7336.36,3.4,100
+PROD0280,Mobiles & Accessories,Earphones,Samsung,16467.95,10817.12,3.1,182
+PROD0281,Mobiles & Accessories,Cases,Realme,23625.92,15360.46,4.2,257
+PROD0282,Mobiles & Accessories,Chargers,Boat,25703.82,16145.69,4.4,127
+PROD0283,Mobiles & Accessories,Earphones,Xiaomi,28925.44,17333.82,4.2,278
+PROD0284,Mobiles & Accessories,Smartphones,Samsung,18523.58,11217.5,3.0,135
+PROD0285,Mobiles & Accessories,Power Banks,OnePlus,12038.13,7427.97,3.3,471
+PROD0286,Mobiles & Accessories,Earphones,Boat,4439.36,2500.11,3.2,68
+PROD0287,Mobiles & Accessories,Chargers,Boat,9172.01,5973.26,2.8,121
+PROD0288,Mobiles & Accessories,Chargers,Xiaomi,1854.54,1430.65,4.7,460
+PROD0289,Mobiles & Accessories,Power Banks,Xiaomi,43520.61,28489.86,3.5,418
+PROD0290,Mobiles & Accessories,Power Banks,Realme,57465.25,37026.99,4.0,256
+PROD0291,Mobiles & Accessories,Chargers,OnePlus,44508.69,33743.2,4.4,174
+PROD0292,Mobiles & Accessories,Chargers,Xiaomi,8452.18,4683.86,4.4,258
+PROD0293,Mobiles & Accessories,Power Banks,Samsung,418.82,321.7,3.6,450
+PROD0294,Mobiles & Accessories,Chargers,Samsung,21476.44,11977.02,3.8,494
+PROD0295,Mobiles & Accessories,Power Banks,Realme,50521.05,29937.91,3.9,105
+PROD0296,Mobiles & Accessories,Smartphones,Realme,34227.38,25654.49,3.8,484
+PROD0297,Mobiles & Accessories,Chargers,OnePlus,24052.7,18103.7,4.6,16
+PROD0298,Mobiles & Accessories,Chargers,Xiaomi,45744.09,33973.82,4.2,246
+PROD0299,Mobiles & Accessories,Power Banks,OnePlus,7349.49,5374.57,3.9,329
+PROD0300,Mobiles & Accessories,Smartphones,OnePlus,5012.21,3427.77,3.3,29
+PROD0301,Sports & Fitness,Yoga,Adidas,3721.44,2735.39,3.1,294
+PROD0302,Sports & Fitness,Sportswear,Adidas,7064.82,5333.73,4.9,254
+PROD0303,Sports & Fitness,Fitness Equipment,Nike,4166.54,2392.29,3.3,181
+PROD0304,Sports & Fitness,Fitness Equipment,Nike,5176.57,3859.63,2.6,263
+PROD0305,Sports & Fitness,Sportswear,Adidas,5756.88,3716.72,3.7,334
+PROD0306,Sports & Fitness,Sportswear,Nike,3622.73,2673.23,3.5,150
+PROD0307,Sports & Fitness,Fitness Equipment,Nike,7270.79,5158.88,2.7,21
+PROD0308,Sports & Fitness,Yoga,Reebok,3008.06,1973.47,3.7,258
+PROD0309,Sports & Fitness,Cycling,Reebok,7616.88,5306.22,3.4,301
+PROD0310,Sports & Fitness,Cycling,Nike,3381.65,2013.83,4.9,440
+PROD0311,Sports & Fitness,Fitness Equipment,Nike,2149.16,1386.02,3.4,75
+PROD0312,Sports & Fitness,Yoga,Cosco,2546.11,1565.67,3.7,365
+PROD0313,Sports & Fitness,Yoga,Reebok,5689.38,3459.4,4.3,221
+PROD0314,Sports & Fitness,Cycling,Nike,2824.51,1987.94,3.1,17
+PROD0315,Sports & Fitness,Fitness Equipment,Cosco,7970.95,5502.05,4.0,339
+PROD0316,Sports & Fitness,Fitness Equipment,Decathlon,522.74,394.05,2.8,112
+PROD0317,Sports & Fitness,Sportswear,Decathlon,4012.21,2755.76,2.7,427
+PROD0318,Sports & Fitness,Cycling,Nike,5450.63,3400.34,2.6,277
+PROD0319,Sports & Fitness,Outdoor Gear,Nike,7202.33,3963.34,3.2,191
+PROD0320,Sports & Fitness,Sportswear,Cosco,6514.4,5113.1,4.1,193
+PROD0321,Sports & Fitness,Outdoor Gear,Decathlon,4681.74,3423.89,3.7,107
+PROD0322,Sports & Fitness,Sportswear,Nike,1491.02,1080.43,2.9,188
+PROD0323,Sports & Fitness,Yoga,Cosco,230.23,161.93,2.6,7
+PROD0324,Sports & Fitness,Fitness Equipment,Reebok,7819.5,6147.57,4.2,480
+PROD0325,Sports & Fitness,Outdoor Gear,Reebok,7117.28,4394.42,4.3,499
+PROD0326,Sports & Fitness,Yoga,Adidas,3265.12,2381.85,3.0,350
+PROD0327,Sports & Fitness,Sportswear,Decathlon,8907.37,4915.33,3.2,361
+PROD0328,Sports & Fitness,Outdoor Gear,Reebok,353.42,258.0,4.0,165
+PROD0329,Sports & Fitness,Yoga,Decathlon,7171.69,4404.67,3.6,72
+PROD0330,Sports & Fitness,Fitness Equipment,Nike,4068.96,2947.28,4.1,238
+PROD0331,Sports & Fitness,Fitness Equipment,Adidas,5847.09,3480.45,3.9,51
+PROD0332,Sports & Fitness,Fitness Equipment,Reebok,1563.82,964.88,3.5,441
+PROD0333,Sports & Fitness,Cycling,Adidas,7402.92,5236.77,4.3,260
+PROD0334,Sports & Fitness,Fitness Equipment,Decathlon,5175.15,3138.67,4.8,297
+PROD0335,Sports & Fitness,Outdoor Gear,Decathlon,1429.04,812.84,2.6,348
+PROD0336,Sports & Fitness,Yoga,Reebok,8936.16,6369.36,3.0,443
+PROD0337,Sports & Fitness,Cycling,Nike,3443.92,2602.5,2.8,397
+PROD0338,Sports & Fitness,Outdoor Gear,Nike,2563.28,1932.19,3.4,463
+PROD0339,Sports & Fitness,Fitness Equipment,Reebok,1004.14,636.5,2.9,374
+PROD0340,Sports & Fitness,Cycling,Reebok,6844.04,4142.35,3.8,326
+PROD0341,Sports & Fitness,Cycling,Decathlon,6858.24,4146.11,4.5,262
+PROD0342,Sports & Fitness,Fitness Equipment,Nike,7057.4,4296.47,4.4,461
+PROD0343,Sports & Fitness,Fitness Equipment,Reebok,539.22,363.33,2.9,367
+PROD0344,Sports & Fitness,Outdoor Gear,Decathlon,8838.91,5700.2,4.1,87
+PROD0345,Sports & Fitness,Fitness Equipment,Nike,2134.57,1491.57,4.9,497
+PROD0346,Sports & Fitness,Sportswear,Decathlon,777.83,576.26,4.4,62
+PROD0347,Sports & Fitness,Fitness Equipment,Reebok,768.4,450.34,4.7,331
+PROD0348,Sports & Fitness,Yoga,Decathlon,4348.97,2657.03,3.4,41
+PROD0349,Sports & Fitness,Fitness Equipment,Reebok,3611.79,2488.04,2.9,146
+PROD0350,Sports & Fitness,Yoga,Cosco,4866.61,3159.33,3.8,301
+PROD0351,Books & Stationery,Notebooks,HarperCollins,1305.93,763.13,2.7,139
+PROD0352,Books & Stationery,Pens & Pencils,Penguin,1951.79,1254.61,2.6,205
+PROD0353,Books & Stationery,Art Supplies,HarperCollins,313.7,227.99,2.7,274
+PROD0354,Books & Stationery,Fiction,Camlin,1849.91,1478.03,4.0,429
+PROD0355,Books & Stationery,Art Supplies,Classmate,1971.84,1209.9,4.5,95
+PROD0356,Books & Stationery,Pens & Pencils,Faber-Castell,1231.05,812.14,4.8,439
+PROD0357,Books & Stationery,Art Supplies,Classmate,1363.63,1030.86,3.7,342
+PROD0358,Books & Stationery,Notebooks,HarperCollins,496.98,286.67,2.8,483
+PROD0359,Books & Stationery,Academic,Faber-Castell,928.72,608.16,2.7,310
+PROD0360,Books & Stationery,Art Supplies,HarperCollins,354.57,242.95,2.7,374
+PROD0361,Books & Stationery,Art Supplies,HarperCollins,1107.18,868.22,3.0,52
+PROD0362,Books & Stationery,Pens & Pencils,Classmate,175.57,113.6,2.9,376
+PROD0363,Books & Stationery,Pens & Pencils,HarperCollins,750.17,438.72,2.8,250
+PROD0364,Books & Stationery,Pens & Pencils,Penguin,1237.45,811.1,2.5,274
+PROD0365,Books & Stationery,Art Supplies,Classmate,1966.87,1182.79,2.8,173
+PROD0366,Books & Stationery,Art Supplies,Faber-Castell,1775.89,1208.43,2.8,91
+PROD0367,Books & Stationery,Art Supplies,HarperCollins,751.04,580.08,4.2,180
+PROD0368,Books & Stationery,Art Supplies,HarperCollins,1505.76,1060.17,4.7,213
+PROD0369,Books & Stationery,Fiction,Faber-Castell,338.93,259.95,3.3,387
+PROD0370,Books & Stationery,Art Supplies,Faber-Castell,884.78,665.6,2.7,485
+PROD0371,Books & Stationery,Art Supplies,Penguin,1861.82,1027.7,4.8,163
+PROD0372,Books & Stationery,Notebooks,Penguin,567.26,385.03,3.7,209
+PROD0373,Books & Stationery,Notebooks,HarperCollins,1287.08,874.97,4.5,16
+PROD0374,Books & Stationery,Pens & Pencils,Classmate,583.35,455.12,2.7,390
+PROD0375,Books & Stationery,Notebooks,Faber-Castell,1207.06,839.56,3.8,11
+PROD0376,Books & Stationery,Fiction,HarperCollins,385.87,294.48,2.9,247
+PROD0377,Books & Stationery,Pens & Pencils,Faber-Castell,1277.86,786.62,3.2,116
+PROD0378,Books & Stationery,Fiction,HarperCollins,1884.38,1384.71,3.9,304
+PROD0379,Books & Stationery,Academic,Classmate,319.54,207.17,4.2,81
+PROD0380,Books & Stationery,Fiction,Penguin,848.46,644.51,3.0,329
+PROD0381,Books & Stationery,Academic,Faber-Castell,419.93,307.75,4.9,350
+PROD0382,Books & Stationery,Notebooks,Faber-Castell,1041.04,739.96,3.5,368
+PROD0383,Books & Stationery,Art Supplies,HarperCollins,1285.11,913.48,3.5,231
+PROD0384,Books & Stationery,Art Supplies,Classmate,318.82,243.11,4.9,40
+PROD0385,Books & Stationery,Pens & Pencils,Penguin,529.41,370.83,2.8,277
+PROD0386,Books & Stationery,Notebooks,Penguin,1986.29,1318.75,4.3,208
+PROD0387,Books & Stationery,Art Supplies,Penguin,185.71,111.75,3.3,484
+PROD0388,Books & Stationery,Art Supplies,Camlin,851.72,491.4,3.5,126
+PROD0389,Books & Stationery,Academic,Penguin,927.82,513.31,4.4,148
+PROD0390,Books & Stationery,Pens & Pencils,Camlin,349.22,252.37,4.9,464
+PROD0391,Books & Stationery,Notebooks,HarperCollins,1422.93,1088.38,4.9,498
+PROD0392,Books & Stationery,Notebooks,Penguin,1471.53,1030.82,4.2,456
+PROD0393,Books & Stationery,Pens & Pencils,Faber-Castell,1623.31,1168.95,4.8,279
+PROD0394,Books & Stationery,Pens & Pencils,Camlin,1979.37,1376.3,2.8,418
+PROD0395,Books & Stationery,Fiction,Classmate,202.01,133.74,2.7,401
+PROD0396,Books & Stationery,Pens & Pencils,Camlin,179.96,131.87,3.8,98
+PROD0397,Books & Stationery,Pens & Pencils,HarperCollins,1693.25,1292.42,4.3,388
+PROD0398,Books & Stationery,Academic,Penguin,566.38,403.87,3.9,410
+PROD0399,Books & Stationery,Fiction,HarperCollins,1896.05,1456.16,3.1,43
+PROD0400,Books & Stationery,Art Supplies,Classmate,496.17,292.6,4.5,387
