@@ -1,9 +1,12 @@
 -- ================================================================
--- NOTEBOOK 2: Build_Gold_Layer  (pure SQL, PySpark nahi)
--- Setup: naya notebook banao, left panel se Ecommerce_Bronze_Lakehouse attach karo.
--- Har "CELL" ko notebook mein ALAG cell mein paste karo.
--- Har cell ki PEHLI line %%sql honi chahiye (ye line cell ko SQL mode mein chalati hai).
--- Upar se neeche, ek-ek karke run karo.
+-- ================================================================
+-- NOTEBOOK 1: Build_Gold_Layer
+-- Purpose: Build the Gold Layer using SQL
+-- Setup: Attach the Ecommerce_Bronze_Lakehouse to the notebook.
+-- Each CELL should be executed separately.
+-- Each SQL cell must begin with %%sql.
+-- Execute the cells sequentially from top to bottom.
+-- ================================================================
 -- ================================================================
 
 
@@ -58,8 +61,9 @@ FROM (
 
 
 -- ===================== CELL 5: Fact_Orders =====================
+-- Execute this cell after Cells 2, 3, and 4 because
+-- Fact_Orders joins the customer, product, and payment dimensions.
 %%sql
--- Ye cell Cell 2, 3, 4 ke BAAD hi chalana (ye teeno dims ko join karta hai)
 CREATE OR REPLACE TABLE Fact_Orders AS
 SELECT
     o.Order_ID,
@@ -90,7 +94,7 @@ JOIN Dim_Product        p  ON o.Product_ID     = p.Product_ID
 JOIN Dim_Payment_Method pm ON o.Payment_Method = pm.Payment_Method
 
 
--- ===================== CELL 6: GOLD 1 — Category + Month performance =====================
+-- ===================== CELL 6: GOLD Aggregation Table — Category + Month performance =====================
 %%sql
 CREATE OR REPLACE TABLE Gold_Monthly_Category_Summary AS
 SELECT
@@ -126,7 +130,7 @@ JOIN Dim_Customer       c  ON f.Customer_Key       = c.Customer_Key
 GROUP BY pm.Payment_Method, c.City_Tier
 
 
--- ===================== CELL 8: Verify (saari tables ka row count) =====================
+-- ===================== CELL 8: Verify (all tables row count) =====================
 %%sql
 SELECT 'Dim_Date' AS Table_Name, COUNT(*) AS Row_Count FROM Dim_Date
 UNION ALL SELECT 'Dim_Customer', COUNT(*) FROM Dim_Customer
