@@ -1,4 +1,3 @@
-
 # E-Commerce Customer & Sales Analytics Platform — Microsoft Fabric
 
 End-to-end data analytics solution built on Microsoft Fabric, covering the full medallion architecture (Bronze → Silver → Gold → Warehouse) and a Power BI report connected live via Direct Lake.
@@ -105,6 +104,30 @@ Full column-level documentation is in the [BRD](./Documentation/BRD_Ecommerce_Fa
 
 ---
 
+## Sample DAX Measures
+
+The semantic model has 28+ measures across Sales, Fulfillment, Customer, and Discount folders, plus time intelligence (YoY/MoM growth). A few flagship ones:
+
+```dax
+Cancellation Rate =
+DIVIDE([Cancelled Orders], [Total Orders])
+
+Customer Lifetime Value =
+DIVIDE([Total Revenue], [Total Customers])
+
+YoY Revenue Growth % =
+VAR LatestDate = CALCULATE(MAX(dim_date[Date]), ALL(dim_date))
+VAR CurrentYearRev = CALCULATE([Total Revenue], FILTER(ALL(dim_date), YEAR(dim_date[Date]) = YEAR(LatestDate)))
+VAR PrevYearRev = CALCULATE([Total Revenue], FILTER(ALL(dim_date), YEAR(dim_date[Date]) = YEAR(LatestDate) - 1))
+RETURN DIVIDE(CurrentYearRev - PrevYearRev, PrevYearRev)
+
+Repeat Customers =
+VAR CustOrders = SUMMARIZE(fact_orders, fact_orders[Customer_Key], "OrderCount", COUNTROWS(fact_orders))
+RETURN COUNTROWS(FILTER(CustOrders, [OrderCount] > 1))
+```
+
+---
+
 ## Key Insights
 
 - COD orders cancel/return at a materially higher rate than digital payments across every city tier
@@ -127,4 +150,4 @@ This report is connected live to a Microsoft Fabric Direct Lake semantic model, 
 
 ## Author
 
-Sumit Kale — [LinkedIn] · [Portfolio/Resume link]
+Sumit Kale — [LinkedIn](https://www.linkedin.com/in/sumit-kale-773704261) · [GitHub](https://github.com/sumeet582004)
