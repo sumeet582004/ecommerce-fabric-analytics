@@ -1,38 +1,31 @@
+
 # E-Commerce Customer & Sales Analytics Platform — Microsoft Fabric
 
-End-to-end data analytics solution built on Microsoft Fabric, covering the full medallion architecture (Bronze → Silver → Gold) and a Power BI report connected live via Direct Lake.
+End-to-end data analytics solution built on Microsoft Fabric, covering the full medallion architecture (Bronze → Silver → Gold → Warehouse) and a Power BI report connected live via Direct Lake.
 
-**Dataset note:** This project uses a synthetically generated dataset modeling realistic Indian e-commerce patterns (COD-driven cancellation risk, festival-season demand, Tier 1/2/3 city delivery behavior, customer repeat-purchase patterns). It is not sourced from a live production system — the business logic embedded in the data (COD cancellation rates, tier-based delivery delays, festival discounting) was deliberately designed based on real Indian e-commerce market patterns, so the analytics built on top remain representative of real-world conditions. Full reasoning is documented in the [BRD](./BRD_Ecommerce_Fabric_Project.md).
+![Architecture](./Documentation/Fabric_Architecture_Diagram.png)
+
+**Dataset note:** This project uses a synthetically generated dataset modeling realistic Indian e-commerce patterns — COD-driven cancellation risk, festival-season demand, Tier 1/2/3 city delivery behavior, and customer repeat-purchase patterns. It is not sourced from a live production system. The business logic embedded in the data (COD cancellation rates, tier-based delivery delays, festival discounting) was deliberately designed based on documented Indian e-commerce market patterns, so the analytics built on top remain representative of real-world conditions. The generation script is in [`Dataset/generate_dataset.py`](./Dataset/generate_dataset.py), and the full reasoning is documented in the [BRD](./Documentation/BRD_Ecommerce_Fabric_Project.md).
 
 ---
 
 ## Business Problem
 
-The marketplace had no consolidated view of why orders were cancelled or returned, no delivery performance tracking by geography, no visibility into discount-vs-margin tradeoffs, and no customer segmentation — reporting relied on manual spreadsheet exports. This project builds a single, automated, refreshable source of truth to answer 25 defined business questions (full list in the BRD).
+The marketplace had no consolidated view of why orders were cancelled or returned, no delivery performance tracking by geography, no visibility into discount-vs-margin tradeoffs, and no customer segmentation — reporting relied on manual spreadsheet exports. This project builds a single, automated source of truth to answer 25 defined business questions (full list in the BRD).
 
-**Key finding:** COD (Cash on Delivery) orders have a significantly higher cancellation rate than digital payment methods (UPI, Card, Wallet) — this is the core risk driver surfaced on the Order Fulfillment & Risk page.
+**Key finding:** COD (Cash on Delivery) orders have a materially higher cancellation rate than digital payment methods (UPI, Card, Wallet) across every city tier — this is the core risk driver surfaced on the Order Fulfillment & Risk page.
 
 ---
 
 ## Architecture
 
-```
-Raw CSV (Orders, Customers, Products)
-        ↓
-Bronze Layer — Fabric Lakehouse (raw Delta tables)
-        ↓
-Silver Layer — PySpark notebook (cleaning, type casting, derived flags)
-        ↓
-Gold Layer — Spark SQL notebook (star schema: Dim_Date, Dim_Customer,
-             Dim_Product, Dim_Payment_Method, Fact_Orders) +
-             2 aggregate tables (Gold_Monthly_Category_Summary,
-             Gold_Payment_Risk_Summary)
-        ↓
-Fabric Warehouse — Gold tables copied in via pipeline; 1 SQL view
-        ↓
-Power BI (Direct Lake) — 5-page report, 28+ DAX measures, time
-             intelligence, dynamic visuals
-```
+| Layer | Where it happens | What it does |
+|---|---|---|
+| **Bronze** | Fabric Lakehouse | Raw `Orders`, `Customers`, `Products` CSVs loaded as Delta tables (no transformation — see `Dataset/`) |
+| **Silver** | PySpark notebook | Date type casting, null handling, derived flags (`Is_Cancelled`, `Age_Group`, `Margin_Percent`), referential integrity checks — [`Silver layer/silver_layer_pyspark.py`](./Silver%20layer/silver_layer_pyspark.py) |
+| **Gold** | Spark SQL notebook | Star schema (`Dim_Date`, `Dim_Customer`, `Dim_Product`, `Dim_Payment_Method`, `Fact_Orders`) + 2 aggregate tables (`Gold_Monthly_Category_Summary`, `Gold_Payment_Risk_Summary`) — [`Gold layer/build_gold_layer_sql_notebook.sql`](./Gold%20layer/build_gold_layer_sql_notebook.sql) |
+| **Warehouse** | Fabric Warehouse (T-SQL) | Gold tables copied in via Data Pipeline; verification queries + a customer summary view — [`Gold layer/warehouse_queries_views`](./Gold%20layer/warehouse_queries_views) |
+| **Reporting** | Power BI (Direct Lake) | 5-page report, 28+ DAX measures, time intelligence (MoM/YoY), decomposition tree, waterfall, scatter, gauge, treemap visuals |
 
 **Tech stack:** Microsoft Fabric (Lakehouse, Warehouse, Notebooks, Data Pipelines), PySpark, Spark SQL, T-SQL, Power BI (Direct Lake), DAX.
 
@@ -45,7 +38,7 @@ Power BI (Direct Lake) — 5-page report, 28+ DAX measures, time
 - **Customers:** 5,000 rows, 9 columns (demographics, city tier, signup date)
 - **Products:** 400 rows, 8 columns (category, brand, price, cost, margin, stock)
 
-Full column-level documentation is in the [BRD](./BRD_Ecommerce_Fabric_Project.md), Section 3.
+Full column-level documentation is in the [BRD](./Documentation/BRD_Ecommerce_Fabric_Project.md), Section 3.
 
 ---
 
@@ -61,24 +54,27 @@ Full column-level documentation is in the [BRD](./BRD_Ecommerce_Fabric_Project.m
 
 ---
 
-## Screenshots
+## Fabric Implementation
 
-*(Replace these placeholders with your actual exported PNGs before pushing — see the "How to add screenshots" section below.)*
+| | |
+|---|---|
+| ![Workspace](./Screenshots/Fabric/01_Fabric_Workspace.png) | ![Silver notebook](./Screenshots/Fabric/02_Fabric_silver_notbook.png) |
+| Workspace overview | Silver layer notebook run |
+| ![Warehouse](./Screenshots/Fabric/03_Fabric_Warehouse.png) | ![Semantic model](./Screenshots/Fabric/04_Semantic_Model.png) |
+| Warehouse tables | Semantic model relationships |
 
-### Home
-![Home page](./screenshots/01_home.png)
+---
 
-### Sales & Revenue Overview
-![Sales Overview](./screenshots/02_sales_overview.png)
+## Power BI Report
 
-### Order Fulfillment & Risk
-![Fulfillment Risk](./screenshots/03_fulfillment_risk.png)
-
-### Customer Segmentation & Retention
-![Customer Segmentation](./screenshots/04_customer_segmentation.png)
-
-### Discount & Promotion Effectiveness
-![Discount Effectiveness](./screenshots/05_discount_effectiveness.png)
+| | |
+|---|---|
+| ![Home](./Screenshots/PowerBI/01_Home.png) | ![Sales Overview](./Screenshots/PowerBI/02_Sales_Overview.png) |
+| Home | Sales & Revenue Overview |
+| ![Fulfillment Risk](./Screenshots/PowerBI/03_Order_Fulfillment_Risk.png) | ![Customer Analytics](./Screenshots/PowerBI/04_Customer_Analytics.png) |
+| Order Fulfillment & Risk | Customer Segmentation & Retention |
+| ![Discount Effectiveness](./Screenshots/PowerBI/05_Discount_Effectiveness.png) | |
+| Discount & Promotion Effectiveness | |
 
 ---
 
@@ -86,17 +82,25 @@ Full column-level documentation is in the [BRD](./BRD_Ecommerce_Fabric_Project.m
 
 ```
 ├── README.md
-├── BRD_Ecommerce_Fabric_Project.md        # Full business requirements document
-├── PowerBI_Report_Build_Guide.md          # Step-by-step build log (measures, visuals, DAX)
-├── screenshots/                           # Exported report page images
-├── powerbi/
-│   └── e_commerce_report.pbip             # Power BI Project (Direct Lake)
-├── sql/
-│   ├── silver_layer_pyspark.py            # Bronze -> Silver cleaning (PySpark)
-│   ├── build_gold_layer_sql_notebook.sql  # Silver -> Gold star schema (Spark SQL)
-│   └── warehouse_queries/                 # Warehouse view + verification queries
-└── data_generation/
-    └── generate_dataset.py                # Synthetic dataset generator
+├── Dataset/
+│   ├── Customers.csv
+│   ├── Orders.csv
+│   ├── Products.csv
+│   └── generate_dataset.py          # synthetic dataset generator
+├── Documentation/
+│   ├── BRD_Ecommerce_Fabric_Project.md
+│   └── Fabric_Architecture_Diagram.png
+├── Silver layer/
+│   └── silver_layer_pyspark.py      # Bronze -> Silver cleaning
+├── Gold layer/
+│   ├── build_gold_layer_sql_notebook.sql   # Silver -> Gold star schema (Spark SQL)
+│   └── warehouse_queries_views             # Warehouse verification + view (T-SQL)
+├── Screenshots/
+│   ├── Fabric/                      # workspace, notebook, warehouse, semantic model
+│   └── PowerBI/                     # all 5 report pages
+└── powerbi/
+    ├── pbip file/                   # Power BI Project (Direct Lake, zipped — see below)
+    └── pbix file/                   # .pbix backup
 ```
 
 ---
@@ -113,11 +117,11 @@ Full column-level documentation is in the [BRD](./BRD_Ecommerce_Fabric_Project.m
 
 ## How to Explore
 
-The `.pbip` file is connected live to a Microsoft Fabric Direct Lake semantic model. Opening it requires:
-1. Power BI Desktop
-2. Access to the underlying Fabric workspace (private — the live data connection will not work outside the author's Fabric trial/capacity)
+The `powerbi/pbip file/` folder is zipped (GitHub's web upload doesn't handle nested PBIP folders directly) — extract both `.zip` files into the same folder as the `.pbip` file before opening it in Power BI Desktop.
 
-If the Fabric trial capacity has expired, the file will not load live data — refer to the screenshots above for the full report, or contact me for a recorded walkthrough.
+This report is connected live to a Microsoft Fabric Direct Lake semantic model, so opening it requires access to the author's Fabric workspace — it will not load data outside that environment, and Fabric trial capacities expire after a period of inactivity. If the `.pbip` doesn't load:
+- Check `powerbi/pbix file/` for the `.pbix` backup (same report, may still open depending on connection state)
+- Otherwise, refer to the **Screenshots** sections above for the full report
 
 ---
 
