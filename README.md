@@ -106,7 +106,7 @@ Full column-level documentation is in the [BRD](./Documentation/BRD_Ecommerce_Fa
 
 ## Sample DAX Measures
 
-The semantic model has 28+ measures across Sales, Fulfillment, Customer, and Discount folders, plus time intelligence (YoY/MoM growth). A few flagship ones:
+The semantic model has 22+ measures across Sales, Fulfillment, Customer, and Discount folders, plus time intelligence (YoY/MoM growth). A few flagship ones:
 
 ```dax
 Cancellation Rate =
